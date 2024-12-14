@@ -1,0 +1,207 @@
+/* General Theme Inspired by Star Wars and Kylo Ren */
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #1a1a1a; /* Dark Space Background */
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #111; /* Almost black for a galactic feel */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.5); /* Red glow like a lightsaber */
+}
+
+.nav-brand a {
+  color: #ff0000; /* Kylo Ren's lightsaber red */
+  font-size: 4rem;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 
+    0 0 10px #ff0000, /* Inner glow */
+    0 0 20px #ff0000, /* Outer glow */
+    0 0 30px #ff0000; /* Strong halo */
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #ff0000;
+  color: #000;
+}
+
+/* Search Bar */
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-input {
+  padding: 0.5rem;
+  background-color: #222;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.search-button {
+  padding: 0.5rem 1rem;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.search-button:hover {
+  background-color: #b30000;
+}
+
+/* App Container */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #000 0%, #111 50%, #1a1a1a 100%);
+}
+
+/* Content Area */
+.content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #333;
+  background: rgba(255, 255, 255, 0.05); /* Subtle transparency */
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+/* Token Cards */
+.token-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.token-card {
+  background: #1c1c1c;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: #e0e0e0;
+}
+
+.token-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(255, 0, 0, 0.5);
+}
+
+/* Error Messages */
+.error {
+  color: #ff4d4d;
+  background-color: rgba(255, 77, 77, 0.1);
+  padding: 1rem;
+  border: 1px solid #ff4d4d;
+  border-radius: 4px;
+  margin: 1rem 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #b30000;
+}
+
+button:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+/* Token Details */
+.token-details {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+}
+
+.token-image-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
+}
+
+.token-description {
+  margin: 20px 0;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5em;
+  color: #ff0000;
+  text-shadow: 0 2px 4px rgba(255, 0, 0, 0.8);
+}
+
+/* Links */
+a {
+  color: #ff0000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #b30000;
+}
+
+
+
